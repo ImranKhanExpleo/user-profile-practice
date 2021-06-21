@@ -1,0 +1,58 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "com.cordova.plugins.cookiemaster": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "cordova-plugin-neucookies": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "cordova-plugin-uniquedeviceid": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "cordova-plugin-wkwebviewxhrfix": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    },
+    "phonegap-plugin-multidex": {
+      "PACKAGE_NAME": "co.neutrinos_training.usecase_01_updateprofilepage"
+    }
+  }
+}

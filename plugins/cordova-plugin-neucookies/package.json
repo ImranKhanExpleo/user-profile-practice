@@ -1,0 +1,55 @@
+{
+  "_from": "cordova-plugin-neucookies@1.0.0",
+  "_id": "cordova-plugin-neucookies@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-CzTpquFDcohdIgm/4UqP6xkI1Xz6Gmv4jHaMuIKK8ns3WqVqP7UqEV90dsGthfgAIqlXKPKAXSpUQ75NVeKfoQ==",
+  "_location": "/cordova-plugin-neucookies",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-neucookies@1.0.0",
+    "name": "cordova-plugin-neucookies",
+    "escapedName": "cordova-plugin-neucookies",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-neucookies/-/cordova-plugin-neucookies-1.0.0.tgz",
+  "_shasum": "2db38b1c43b2004fad6e5c2903412f3f03fd7051",
+  "_spec": "cordova-plugin-neucookies@1.0.0",
+  "_where": "C:\\Users\\9412\\neutrinos-studio\\usecase-01-updateprofilepage\\app",
+  "author": {
+    "name": "Konstantinos Tsanakas"
+  },
+  "bugs": {
+    "url": "https://github.com/NeutrinosPlatform/cordova-plugin-neucookies/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-neucookies",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Cookies Plugin",
+  "homepage": "https://github.com/NeutrinosPlatform/cordova-plugin-neucookies#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-neucookies",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeutrinosPlatform/cordova-plugin-neucookies.git"
+  },
+  "version": "1.0.0"
+}

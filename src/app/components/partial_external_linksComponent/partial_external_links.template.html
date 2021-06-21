@@ -1,0 +1,53 @@
+<mat-card style="height:80vh;" class="myBigCard">
+  <mat-card-title style="color:gray;">Your External Links</mat-card-title>
+
+  <mat-card-content style="height:80vh;">
+    <div fxLayout="column wrap" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
+      <form [formGroup]="external_links_form" style="height:100%;">
+        <div style="margin: 10px;">
+          <span><strong> Facebook URL:</strong></span>
+        </div>
+        <mat-form-field class="myInput" [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput [(ngModel)]="fbUrl" placeholder="Paste your link here." [required]="false" formControlName="fbUrl">
+          <mat-error align="start" *ngIf="external_links_form.controls.fbUrl.errors?.pattern">Enter a valid Url.</mat-error>
+        </mat-form-field>
+        <div style="margin: 10px;">
+          <span><strong> Twitter URL:</strong></span>
+        </div>
+        <mat-form-field class="myInput" [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput [(ngModel)]="twitterUrl" placeholder="Paste your link here." [required]="false" formControlName="twitterUrl">
+          <mat-error align="start" *ngIf="external_links_form.controls.twitterUrl.errors?.pattern">Enter a valid Url.</mat-error>
+        </mat-form-field>
+        <div style="margin: 10px;">
+          <span><strong>Blogger Url:</strong></span>
+        </div>
+        <mat-form-field class="myInput" [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput [(ngModel)]="bloggerUrl" placeholder="Paste your link here." [required]="false" formControlName="bloggerUrl">
+          <mat-error align="start" *ngIf="external_links_form.controls.bloggerUrl.errors?.pattern">Enter a valid URL</mat-error>
+        </mat-form-field>
+        <div style="margin: 10px;">
+          <span><strong>Google Url:</strong></span>
+        </div>
+        <mat-form-field class="myInput" [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput [(ngModel)]="googleUrl" placeholder="Paste your link here." [required]="false" formControlName="googleUrl">
+          <mat-error align="start" *ngIf="external_links_form.controls.googleUrl.errors?.pattern">Enter a valid Url.</mat-error>
+        </mat-form-field>
+        <div style="margin: 10px;">
+          <span><strong>LinkedIn URL:</strong></span>
+        </div>
+        <mat-form-field class="myInput" [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput [(ngModel)]="linkedinUrl" placeholder="Paste your link here." [required]="false" formControlName="linkedinUrl">
+          <mat-error align="start" *ngIf="external_links_form.controls.linkedinUrl.errors?.pattern">Enter a valid url.</mat-error>
+        </mat-form-field>
+        <div style="margin: 10px;">
+          <span><strong>Website URL:</strong></span>
+        </div>
+        <mat-form-field class="myInput" [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput [(ngModel)]="websiteUrl" placeholder="Paste your link here." [required]="false" formControlName="websiteUrl">
+          <mat-error align="start" *ngIf="external_links_form.controls.websiteUrl.errors?.pattern">Enter a valid Url.</mat-error>
+        </mat-form-field>
+        <div fxLayout="row wrap" style="margin:10px;" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="mybutton" (click)="onSubmitFunc()">save &amp; update</button></div>
+      </form>
+    </div>
+  </mat-card-content>
+</mat-card>

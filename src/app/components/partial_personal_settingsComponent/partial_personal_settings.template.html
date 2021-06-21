@@ -1,0 +1,147 @@
+<mat-card style="height:80vh;">
+  <mat-card-title style="color:gray;">Your Personal Settings:</mat-card-title>
+
+  <mat-card-content>
+    <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+      <form [formGroup]="personalDetailsForm">
+        <mat-card class="myBigCard">
+          <mat-card-content>
+            <div fxLayout="row wrap" fxLayoutAlign="space-around start" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <span><strong>Full name:</strong></span>
+                </div>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-form-field class="myInput" [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput placeholder="Input" [required]="false" formControlName="fullname">
+                  <mat-error align="start" *ngIf="personalDetailsForm.controls.fullname.errors?.required">this field cannot be empty.</mat-error>
+                  <mat-error align="start" *ngIf="personalDetailsForm.controls.fullname.errors?.pattern">Only letters are allowed.</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="space-around stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <span><strong>Title:</strong></span>
+                </div>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-form-field class="myInput" [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput placeholder="Input" [required]="false" formControlName="titlepos">
+
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="space-around stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <span><strong>Email:</strong></span>
+                </div>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-form-field class="myInput" [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput placeholder="Input" [required]="false" formControlName="email">
+                  <mat-error align="start" *ngIf="personalDetailsForm.controls.email.errors?.required">this field cannot be empty.</mat-error>
+                  <mat-error align="start" *ngIf="personalDetailsForm.controls.email.errors?.pattern">Please enter correct email format.</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+        <mat-card>
+          <mat-card-content>
+            <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+              <div>
+                <strong>Birthday:</strong>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="width:25%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <mat-select style="width:30%;" formControlName="day" class="myInput" placeholder="Day" [required]="false">
+                    <ng-template ngFor let-option [ngForOf]="days" let-i="index">
+                      <mat-option [value]="option">{{option}}</mat-option>
+                    </ng-template>
+                  </mat-select>
+
+                </mat-form-field>
+              </div>
+              <div fxLayout="column wrap" style="width:25%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <mat-select style="width:40%;" formControlName="month" class="myInput" placeholder="Month" [required]="false">
+                    <ng-template ngFor let-option [ngForOf]="months" let-i="index">
+                      <mat-option [value]="option.value">{{option.viewValue}}</mat-option>
+                    </ng-template>
+                  </mat-select>
+
+                </mat-form-field>
+              </div>
+              <div fxLayout="column wrap" style="width:25%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <mat-select style="width:30%;" formControlName="year" class="myInput" placeholder="Year" [required]="false">
+                    <ng-template ngFor let-option [ngForOf]="years" let-i="index">
+                      <mat-option [value]="option">{{option}}</mat-option>
+                    </ng-template>
+                  </mat-select>
+
+                </mat-form-field>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+        <mat-card>
+          <mat-card-content align="center">
+            <div fxLayout="row wrap" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <span><strong>Country:</strong></span>
+                </div>
+                <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+                  <mat-select formControlName="country" class="myInput" placeholder="Country" [required]="false">
+                    <ng-template ngFor let-option [ngForOf]="countries" let-i="index">
+                      <mat-option [value]="option.name">{{option.name}}</mat-option>
+                    </ng-template>
+                  </mat-select>
+
+                </mat-form-field>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <span><strong>State/Province/Region:</strong></span>
+                </div>
+                <mat-form-field class="myInput" [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput placeholder="Input" [required]="false" formControlName="region">
+
+                </mat-form-field>
+              </div>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <span><strong>Postal Code:</strong></span>
+                </div>
+                <mat-form-field class="myInput" [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput placeholder="Input" [required]="false" formControlName="postalcode">
+
+                </mat-form-field>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="space-evenly stretch" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <span><strong>Phone Number:</strong></span>
+                </div>
+                <mat-form-field class="myInput" [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                  <input matInput placeholder="Input" [required]="false" formControlName="contactnumber">
+
+                </mat-form-field>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+        <mat-card>
+          <mat-card-content align="center"><button mat-button class="mybutton" (click)="submitFun()">Update Information</button></mat-card-content>
+        </mat-card>
+      </form>
+    </div>
+  </mat-card-content>
+</mat-card>

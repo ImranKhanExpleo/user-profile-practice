@@ -1,0 +1,64 @@
+{
+  "_from": "@ahovakimyan/cordova-plugin-wkwebviewxhrfix@1.0.0",
+  "_id": "@ahovakimyan/cordova-plugin-wkwebviewxhrfix@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-hz+kVcRsKzRGU2DrhCPjUK5JebtdjVSG3xMSMHZHwnt29GZVR2OkU4/VBZOkT06J+Ir5QQ1+Gw6oI7KOEO17Zw==",
+  "_location": "/@ahovakimyan/cordova-plugin-wkwebviewxhrfix",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@ahovakimyan/cordova-plugin-wkwebviewxhrfix@1.0.0",
+    "name": "@ahovakimyan/cordova-plugin-wkwebviewxhrfix",
+    "escapedName": "@ahovakimyan%2fcordova-plugin-wkwebviewxhrfix",
+    "scope": "@ahovakimyan",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@ahovakimyan/cordova-plugin-wkwebviewxhrfix/-/cordova-plugin-wkwebviewxhrfix-1.0.0.tgz",
+  "_shasum": "52d0c097380a815e42fe3c39e387cb8a94c6de42",
+  "_spec": "@ahovakimyan/cordova-plugin-wkwebviewxhrfix@1.0.0",
+  "_where": "C:\\Users\\9412\\neutrinos-studio\\usecase-01-updateprofilepage\\app",
+  "author": {
+    "name": "Ara Hovakimyan"
+  },
+  "bugs": {
+    "url": "https://github.com/arahovakimyan/cordova-plugin-wkwebviewxhrfix/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-wkwebviewxhrfix",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova plugin to fix local file XHR access inside WKWebView for Cordova iOS 6+",
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {
+        "cordova": ">5.0.0",
+        "cordova-ios": ">4.0.0"
+      }
+    }
+  },
+  "homepage": "https://github.com/arahovakimyan/cordova-plugin-wkwebviewxhrfix#readme",
+  "keywords": [
+    "cordova",
+    "wkwebview",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "@ahovakimyan/cordova-plugin-wkwebviewxhrfix",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arahovakimyan/cordova-plugin-wkwebviewxhrfix.git"
+  },
+  "version": "1.0.0"
+}

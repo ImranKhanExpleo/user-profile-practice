@@ -1,0 +1,68 @@
+<mat-card style="height:80vh;" class="myBigCard">
+  <mat-card-title style="color:gray;">Your Profile</mat-card-title>
+
+  <mat-card-content align="left">
+    <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false"><img imgSrc="\Web\17241-200.png" class="myImage"></div>
+    <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+      <div>
+        <span><strong> Name </strong></span><br>
+        <span>Designation</span>
+      </div>
+    </div>
+  </mat-card-content>
+
+  <mat-card-content>
+    <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+        <mat-card>
+          <mat-card-title style="font-weight: bold;">{{posts_count}}</mat-card-title>
+
+          <mat-card-subtitle>Posts</mat-card-subtitle>
+        </mat-card>
+      </div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <mat-card>
+          <mat-card-title style="font-weight: bold;">{{followers_count}}</mat-card-title>
+
+          <mat-card-subtitle>Followers</mat-card-subtitle>
+        </mat-card>
+      </div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <mat-card>
+          <mat-card-title style="font-weight: bold;">{{likes_count}}</mat-card-title>
+
+          <mat-card-subtitle>Likes</mat-card-subtitle>
+        </mat-card>
+      </div>
+    </div>
+  </mat-card-content>
+
+  <mat-card-content>
+    <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button class="mybutton">Upload new Avatar</button><button mat-button>Delete</button></div>
+    </div>
+  </mat-card-content>
+
+  <mat-card-content>
+    <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+      <mat-card>
+        <mat-card-title style="font-weight: bold;">Your Slogan</mat-card-title>
+
+        <mat-card-subtitle>{{slogan_string}}</mat-card-subtitle>
+
+        <mat-card-content>
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div>
+              <span style="color:gray;">{{slogan_long_string}}</span>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-card-content>
+
+  <mat-card-content>
+    <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><img imgSrc="\Web\double_comma.png" style="max-width:10%;max-height:10%;"></div>
+  </mat-card-content>
+</mat-card>
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"></div>
